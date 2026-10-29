@@ -1,0 +1,6 @@
+{
+  "name": "AUDITIA Maroc – Cabinet Comptable Tanger, Tétouan & Grand Tanger",
+  "description": "AUDITIA (auditia.ma) : Cabinet d'expertise comptable, d'audit et de conseil à Tanger, Tétouan et Grand Tanger. Dirigé par Badr Lahlou, membre OEC Maroc. Le monde change, notre métier aussi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
