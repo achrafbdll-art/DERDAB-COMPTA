@@ -4,7 +4,8 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, Phone, Lock, Calendar, MapPin, ExternalLink } from 'lucide-react';
+import { ChevronDown, Menu, X, Phone, Lock, Calendar, MapPin, ExternalLink, Calculator } from 'lucide-react';
+import { SocialLinks } from './SocialLinks.tsx';
 
 interface HeaderProps {
   onOpenBooking: () => void;
@@ -75,7 +76,7 @@ export const Header: React.FC<HeaderProps> = ({
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <button
-                onClick={() => handleLinkClick('expertise-regionale')}
+                onClick={() => handleLinkClick('cabinet')}
                 className="flex items-center gap-1 hover:text-white transition-colors py-2 whitespace-nowrap"
               >
                 <span>Notre cabinet</span>
@@ -88,28 +89,28 @@ export const Header: React.FC<HeaderProps> = ({
                     Présentation & Réseau
                   </div>
                   <a
-                    href="#expertise-regionale"
-                    onClick={() => handleLinkClick('expertise-regionale')}
+                    href="#cabinet"
+                    onClick={() => handleLinkClick('cabinet')}
                     className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-slate-200 hover:text-white"
                   >
-                    <div className="font-semibold">Le cabinet au Maroc</div>
+                    <div className="font-semibold">Le cabinet DERDAB COMPTA</div>
                     <div className="text-slate-400 text-[11px]">Ordre des Experts-Comptables (OEC)</div>
                   </a>
                   <a
-                    href="#expertise-regionale"
-                    onClick={() => handleLinkClick('expertise-regionale')}
+                    href="#cabinet"
+                    onClick={() => handleLinkClick('cabinet')}
+                    className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-slate-200 hover:text-white"
+                  >
+                    <div className="font-semibold">Maître Mourad Derdab</div>
+                    <div className="text-slate-400 text-[11px]">Fondateur & Vision stratégique</div>
+                  </a>
+                  <a
+                    href="#contact"
+                    onClick={() => handleLinkClick('contact')}
                     className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-slate-200 hover:text-white"
                   >
                     <div className="font-semibold">Bureaux Tanger & Tétouan</div>
                     <div className="text-slate-400 text-[11px]">Grand Tanger · ZAI · Tanger Med</div>
-                  </a>
-                  <a
-                    href="#expertise-regionale"
-                    onClick={() => handleLinkClick('expertise-regionale')}
-                    className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-slate-200 hover:text-white"
-                  >
-                    <div className="font-semibold">Badr Lahlou & Associés</div>
-                    <div className="text-slate-400 text-[11px]">Direction & Commissariat aux comptes</div>
                   </a>
                 </div>
               )}
@@ -122,7 +123,7 @@ export const Header: React.FC<HeaderProps> = ({
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <button
-                onClick={() => handleLinkClick('offres')}
+                onClick={() => handleLinkClick('enjeux')}
                 className="flex items-center gap-1 hover:text-white transition-colors py-2 whitespace-nowrap"
               >
                 <span>Vos enjeux</span>
@@ -135,24 +136,24 @@ export const Header: React.FC<HeaderProps> = ({
                     Défis dirigeants
                   </div>
                   <a
-                    href="#offres"
-                    onClick={() => handleLinkClick('offres')}
+                    href="#enjeux"
+                    onClick={() => handleLinkClick('enjeux')}
                     className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-slate-200 hover:text-white"
                   >
                     <div className="font-semibold">Créer une entreprise au Maroc</div>
                     <div className="text-slate-400 text-[11px]">SARL / SA via le CRI en 48h</div>
                   </a>
                   <a
-                    href="#offres"
-                    onClick={() => handleLinkClick('offres')}
+                    href="#enjeux"
+                    onClick={() => handleLinkClick('enjeux')}
                     className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-slate-200 hover:text-white"
                   >
                     <div className="font-semibold">S'implanter en Zone Franche</div>
                     <div className="text-slate-400 text-[11px]">TFZ, Tanger Automotive City & Medhub</div>
                   </a>
                   <a
-                    href="#offres"
-                    onClick={() => handleLinkClick('offres')}
+                    href="#enjeux"
+                    onClick={() => handleLinkClick('enjeux')}
                     className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-slate-200 hover:text-white"
                   >
                     <div className="font-semibold">Changer d'expert-comptable</div>
@@ -224,7 +225,7 @@ export const Header: React.FC<HeaderProps> = ({
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <button
-                onClick={() => handleLinkClick('offres')}
+                onClick={() => handleLinkClick('secteurs')}
                 className="flex items-center gap-1 hover:text-white transition-colors py-2 whitespace-nowrap"
               >
                 <span>Votre secteur</span>
@@ -236,34 +237,39 @@ export const Header: React.FC<HeaderProps> = ({
                   <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider px-3 py-1">
                     Écosystèmes industriels & PME
                   </div>
-                  <div className="px-3 py-1.5 text-slate-300">
+                  <a href="#secteurs" onClick={() => handleLinkClick('secteurs')} className="block px-3 py-2 rounded-lg hover:bg-white/10 text-slate-300">
                     <span className="font-semibold text-white">Automobile & Industrie : </span>
                     <span className="text-slate-400">Tanger Auto City (TAC)</span>
-                  </div>
-                  <div className="px-3 py-1.5 text-slate-300">
+                  </a>
+                  <a href="#secteurs" onClick={() => handleLinkClick('secteurs')} className="block px-3 py-2 rounded-lg hover:bg-white/10 text-slate-300">
                     <span className="font-semibold text-white">Logistique & Transit : </span>
                     <span className="text-slate-400">Tanger Med Port & Hub</span>
-                  </div>
-                  <div className="px-3 py-1.5 text-slate-300">
+                  </a>
+                  <a href="#secteurs" onClick={() => handleLinkClick('secteurs')} className="block px-3 py-2 rounded-lg hover:bg-white/10 text-slate-300">
                     <span className="font-semibold text-white">Commerce & PME : </span>
                     <span className="text-slate-400">Tanger Centre & Tétouan</span>
-                  </div>
-                  <div className="px-3 py-1.5 text-slate-300">
-                    <span className="font-semibold text-white">Investisseurs & MRE : </span>
-                    <span className="text-slate-400">Comptes convertibles</span>
-                  </div>
+                  </a>
                 </div>
               )}
             </div>
 
-            {/* 5. Ressources */}
+            {/* 5. Simulateur de Devis */}
+            <button
+              onClick={() => handleLinkClick('devis')}
+              className="flex items-center gap-1 text-[#2dd4bf] hover:text-white font-semibold transition-colors py-2 whitespace-nowrap"
+            >
+              <Calculator className="w-3.5 h-3.5" />
+              <span>Devis en ligne</span>
+            </button>
+
+            {/* 6. Ressources */}
             <div
               className="relative"
               onMouseEnter={() => setActiveDropdown('ressources')}
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <button
-                onClick={() => handleLinkClick('actualites')}
+                onClick={() => handleLinkClick('evenements-articles')}
                 className="flex items-center gap-1 hover:text-white transition-colors py-2 whitespace-nowrap"
               >
                 <span>Ressources</span>
@@ -281,12 +287,12 @@ export const Header: React.FC<HeaderProps> = ({
                     <div className="text-slate-400 text-[11px]">Nos publications, ateliers & veille</div>
                   </a>
                   <a
-                    href="#actualites"
-                    onClick={() => handleLinkClick('actualites')}
+                    href="#contact"
+                    onClick={() => handleLinkClick('contact')}
                     className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-slate-200 hover:text-white"
                   >
-                    <div className="font-semibold">Veille fiscale & Loi de Finances 2026</div>
-                    <div className="text-slate-400 text-[11px]">Dernières réformes de la DGI</div>
+                    <div className="font-semibold">Nos 4 Bureaux & Contact</div>
+                    <div className="text-slate-400 text-[11px]">Tanger, Tétouan & Tanger Med</div>
                   </a>
                   <a
                     href="#faq"
@@ -346,47 +352,62 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#0a1724]/98 backdrop-blur-xl border-b border-white/10 px-5 pt-4 pb-6 space-y-4 text-white shadow-2xl">
-          <div className="flex flex-col space-y-2 text-sm font-semibold">
+        <div className="lg:hidden bg-[#06111c]/98 backdrop-blur-xl border-b border-white/10 px-5 pt-4 pb-6 space-y-4 text-white shadow-2xl max-h-[85vh] overflow-y-auto">
+          <div className="flex flex-col space-y-1.5 text-sm font-semibold">
             <button
-              onClick={() => handleLinkClick('accueil')}
-              className="text-left py-2 border-b border-white/10 flex items-center justify-between"
+              onClick={() => handleLinkClick('cabinet')}
+              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between hover:text-[#2dd4bf] transition-colors"
             >
-              <span>Notre cabinet & Implantations (Tanger, Tétouan)</span>
-              <ChevronDown className="w-4 h-4 text-slate-400" />
+              <span>Notre Cabinet (Maître Mourad Derdab)</span>
+              <span className="text-xs text-slate-400">›</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('enjeux')}
+              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between hover:text-[#2dd4bf] transition-colors"
+            >
+              <span>Vos Enjeux & Création de société (CRI)</span>
+              <span className="text-xs text-slate-400">›</span>
             </button>
             <button
               onClick={() => handleLinkClick('offres')}
-              className="text-left py-2 border-b border-white/10 flex items-center justify-between"
+              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between hover:text-[#2dd4bf] transition-colors"
             >
-              <span>Vos enjeux & Création de société</span>
-              <ChevronDown className="w-4 h-4 text-slate-400" />
+              <span>Nos Expertises Comptables & Fiscales</span>
+              <span className="text-xs text-slate-400">›</span>
             </button>
             <button
-              onClick={() => handleLinkClick('offres')}
-              className="text-left py-2 border-b border-white/10 flex items-center justify-between"
+              onClick={() => handleLinkClick('secteurs')}
+              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between hover:text-[#2dd4bf] transition-colors"
             >
-              <span>Nos expertises comptables & fiscales</span>
-              <ChevronDown className="w-4 h-4 text-slate-400" />
+              <span>Votre Secteur (Auto, Fret, PME, BTP)</span>
+              <span className="text-xs text-slate-400">›</span>
             </button>
             <button
-              onClick={() => handleLinkClick('offres')}
-              className="text-left py-2 border-b border-white/10 flex items-center justify-between"
+              onClick={() => handleLinkClick('devis')}
+              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between text-[#2dd4bf] font-bold"
             >
-              <span>Votre secteur (ZAI, Tanger Med, PME)</span>
-              <ChevronDown className="w-4 h-4 text-slate-400" />
+              <span>Simulateur de Devis en ligne</span>
+              <span className="text-xs font-bold">›</span>
             </button>
             <button
               onClick={() => handleLinkClick('evenements-articles')}
-              className="text-left py-2 text-[#2dd4bf] font-bold"
+              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between hover:text-[#2dd4bf] transition-colors"
             >
-              Événements & Articles
+              <span>Événements & Articles / Veille fiscale</span>
+              <span className="text-xs text-slate-400">›</span>
             </button>
             <button
-              onClick={() => handleLinkClick('actualites')}
-              className="text-left py-2 text-slate-300"
+              onClick={() => handleLinkClick('contact')}
+              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between hover:text-[#2dd4bf] transition-colors"
             >
-              Veille fiscale & Loi de Finances 2026
+              <span>Nos 4 Bureaux & Contact Direct</span>
+              <span className="text-xs text-slate-400">›</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('faq')}
+              className="text-left py-2 text-slate-300 hover:text-white transition-colors"
+            >
+              <span>Foire aux questions (FAQ)</span>
             </button>
           </div>
 
@@ -396,29 +417,45 @@ export const Header: React.FC<HeaderProps> = ({
                 setMobileMenuOpen(false);
                 onOpenClientPortal();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-white/10 hover:bg-white/20 text-white rounded-lg text-xs font-semibold"
+              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-white/10 hover:bg-white/20 text-white rounded-xl text-xs font-semibold border border-white/15"
             >
               <Lock className="w-3.5 h-3.5 text-[#2dd4bf]" />
-              <span>Accéder à l'Espace Client</span>
+              <span>Accéder à l'Espace Client Connect</span>
             </button>
 
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
-                onOpenBooking();
+                handleLinkClick('devis');
               }}
-              className="w-full py-3 px-4 bg-[#c5f2f0] text-slate-950 font-black text-sm rounded shadow text-center"
+              className="w-full py-3 px-4 bg-[#c5f2f0] text-slate-950 font-black text-sm rounded-xl shadow-md text-center active:scale-95 transition-all"
             >
-              Contact & Devis sans engagement
+              Simuler mon tarif comptable en 1 min
             </button>
 
-            <a
-              href="tel:+212539345000"
-              className="flex items-center justify-center gap-2 text-xs text-slate-400 pt-1"
-            >
-              <Phone className="w-3.5 h-3.5 text-[#2dd4bf]" />
-              <span>Ligne directe Tanger : +212 (0)5 39 34 50 00</span>
-            </a>
+            <div className="flex items-center gap-2 pt-1">
+              <a
+                href="tel:+212539345000"
+                className="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 bg-white/5 border border-white/10 rounded-lg text-xs text-slate-300 font-semibold"
+              >
+                <Phone className="w-3.5 h-3.5 text-[#2dd4bf]" />
+                <span>+212 (0)5 39 34 50 00</span>
+              </a>
+              <a
+                href="https://wa.me/212661000000?text=Bonjour,%20je%20souhaite%20un%20renseignement%20comptable."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-xs text-white font-semibold"
+              >
+                <span>WhatsApp</span>
+              </a>
+            </div>
+
+            {/* Social media icons on mobile */}
+            <div className="pt-3 border-t border-white/10 flex flex-col items-center gap-2">
+              <span className="text-[11px] text-slate-400">Suivez Maître Derdab sur les réseaux :</span>
+              <SocialLinks variant="header" />
+            </div>
           </div>
         </div>
       )}

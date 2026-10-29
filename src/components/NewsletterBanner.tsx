@@ -122,7 +122,7 @@ export const NewsletterBanner: React.FC = () => {
             </ul>
 
             <p className="text-xs text-slate-500 mb-4">
-              Pour toute demande spécifique ou suppression immédiate de votre adresse : <strong>dpo@auditia.ma</strong> ou par courrier au cabinet.
+              Pour toute demande spécifique ou suppression immédiate de votre adresse : <strong>dpo@derdabcompta.ma</strong> ou par courrier au cabinet.
             </p>
 
             <button

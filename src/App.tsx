@@ -17,6 +17,11 @@ import { Phone, Calendar, MessageSquare } from 'lucide-react';
 
 import { EInvoicingBanner } from './components/EInvoicingBanner.tsx';
 import { InteractiveAccordionSection } from './components/InteractiveAccordionSection.tsx';
+import { CabinetSection } from './components/CabinetSection.tsx';
+import { EnjeuxSection } from './components/EnjeuxSection.tsx';
+import { SectorsSection } from './components/SectorsSection.tsx';
+import { OfficesContactSection } from './components/OfficesContactSection.tsx';
+import { QuoteSimulatorSection } from './components/QuoteSimulatorSection.tsx';
 
 export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -61,26 +66,36 @@ export default function App() {
       />
 
       <main className="flex-1">
-        {/* 1. Hero Section (Identical to Rydge structure) */}
+        {/* 1. Hero Section */}
         <Hero
           onOpenBooking={(service) => handleOpenBooking(service ? { service } : undefined)}
           onOpenArticles={() => handleNavigateSection('evenements-articles')}
-          onFindOffice={() => handleNavigateSection('offres')}
+          onFindOffice={() => handleNavigateSection('contact')}
         />
 
-        {/* 2. Notre force : Le partenaire de référence des entrepreneurs (100% identical to screenshot image_4de21bf7.png) */}
+        {/* 2. Notre force : Chiffres clés génériques comptabilité */}
         <OurStrengthSection
-          onDiscoverOffices={() => handleNavigateSection('offres')}
+          onDiscoverOffices={() => handleNavigateSection('cabinet')}
         />
 
-        {/* 3. Facturation Électronique Banner (100% identical to Rydge reference screenshot) */}
+        {/* 3. Notre Cabinet : Maître Mourad Derdab, Histoire & OEC Maroc */}
+        <CabinetSection
+          onOpenBooking={(serviceName) => handleOpenBooking({ service: serviceName || 'Consultation Cabinet DERDAB COMPTA' })}
+        />
+
+        {/* 4. Vos Enjeux : Création CRI 48h, Zone Franche, Changement cabinet */}
+        <EnjeuxSection
+          onOpenBooking={(serviceName) => handleOpenBooking({ service: serviceName || 'Accompagnement Enjeux Dirigeant' })}
+        />
+
+        {/* 5. Facturation Électronique & Normes DGI */}
         <EInvoicingBanner
           onOpenBooking={(serviceName) =>
             handleOpenBooking({ service: serviceName || 'Facturation Électronique & Conformité DGI' })
           }
         />
 
-        {/* 3. Expertise Accordion with Portrait (100% identical to Rydge screenshot image_d2cf2663.png) */}
+        {/* 6. Expertise Accordéon avec Portrait de Maître Derdab */}
         <InteractiveAccordionSection
           onOpenBooking={(serviceName) =>
             handleOpenBooking({ service: serviceName || 'Expertise Comptable' })
@@ -88,19 +103,34 @@ export default function App() {
           onSelectNav={handleNavigateSection}
         />
 
-        {/* 4. Nos Piliers d'Offres (Rydge standard) */}
+        {/* 7. Nos Piliers d'Offres & Expertises 360° */}
         <ServicesSection
           onSelectServiceForBooking={(serviceTitle) =>
             handleOpenBooking({ service: serviceTitle })
           }
         />
 
-        {/* 5. Nos Événements et Articles (100% identical to Rydge reference screenshot image_3cf415f2.png) */}
+        {/* 8. Votre Secteur Régional (Auto TAC, Tanger Med, PME, BTP) */}
+        <SectorsSection
+          onOpenBooking={(serviceName) => handleOpenBooking({ service: serviceName || 'Conseil Sectoriel Régional' })}
+        />
+
+        {/* 9. Simulateur de Devis en ligne en Dirhams Marocains (MAD) */}
+        <QuoteSimulatorSection
+          onOpenBooking={(quoteData) => handleOpenBooking(quoteData)}
+        />
+
+        {/* 10. Nos Événements et Articles / Veille fiscale */}
         <ArticlesEventsSection
           onOpenBooking={(subject) => handleOpenBooking({ service: subject })}
         />
 
-        {/* 7. FAQ Régionale & Comptable */}
+        {/* 11. Nos 4 Bureaux (Tanger, Tétouan, TAC, Tanger Med) & Formulaire Contact */}
+        <OfficesContactSection
+          onOpenBooking={(serviceName, officeName) => handleOpenBooking({ service: serviceName, office: officeName })}
+        />
+
+        {/* 12. FAQ Régionale & Fiscale */}
         <FaqSection />
       </main>
 
@@ -147,10 +177,17 @@ export default function App() {
         </a>
 
         <button
-          onClick={() => handleOpenBooking()}
-          className="flex-1 ml-3 py-2 px-3 bg-blue-700 text-white font-bold text-xs rounded-lg shadow-sm text-center"
+          onClick={() => handleNavigateSection('devis')}
+          className="flex-1 ml-2 py-2 px-2.5 bg-[#c5f2f0] text-slate-950 font-extrabold text-[11px] rounded-lg shadow-xs text-center border border-teal-300 active:scale-95 transition-all"
         >
-          Prendre RDV Gratuit
+          Simuler Devis
+        </button>
+
+        <button
+          onClick={() => handleOpenBooking()}
+          className="ml-2 py-2 px-3 bg-[#0a1724] text-white font-bold text-[11px] rounded-lg shadow-xs text-center active:scale-95 transition-all"
+        >
+          Prendre RDV
         </button>
       </div>
     </div>

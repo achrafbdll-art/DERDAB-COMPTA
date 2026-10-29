@@ -18,7 +18,7 @@ interface BookingModalProps {
 export const BookingModal: React.FC<BookingModalProps> = ({
   isOpen,
   onClose,
-  initialOffice = 'AUDITIA Tanger – City Center',
+  initialOffice = 'DERDAB COMPTA Tanger – City Center',
   initialService = 'Expertise Comptable & Tenue Digitale',
   initialQuoteSummary,
   initialEstimatedFee,
@@ -188,10 +188,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   onChange={(e) => setOffice(e.target.value)}
                   className="w-full text-xs bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-slate-900 focus:outline-none focus:border-blue-600"
                 >
-                  <option value="AUDITIA Tanger – City Center">Tanger City Center (Bd Mohammed VI)</option>
-                  <option value="AUDITIA Tanger Automotive & Free Zone">Tanger Free Zone & Auto City (TAC)</option>
-                  <option value="AUDITIA Tétouan – Wilaya Center">Tétouan – Wilaya Center (Avenue des FAR)</option>
-                  <option value="AUDITIA Tanger Med Port & Logistics">Tanger Med Port & Hub Tertiaire</option>
+                  <option value="DERDAB COMPTA Tanger – City Center">Tanger City Center (Bd Mohammed VI)</option>
+                  <option value="DERDAB COMPTA Tanger Automotive & Free Zone">Tanger Free Zone & Auto City (TAC)</option>
+                  <option value="DERDAB COMPTA Tétouan – Wilaya Center">Tétouan – Wilaya Center (Avenue des FAR)</option>
+                  <option value="DERDAB COMPTA Tanger Med Port & Logistics">Tanger Med Port & Hub Tertiaire</option>
                 </select>
               </div>
             )}

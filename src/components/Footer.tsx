@@ -6,6 +6,7 @@
 import React from 'react';
 import { ArrowUp, ShieldCheck } from 'lucide-react';
 import { NewsletterBanner } from './NewsletterBanner.tsx';
+import { SocialLinks } from './SocialLinks.tsx';
 
 interface FooterProps {
   onSelectNav: (id: string) => void;
@@ -39,42 +40,42 @@ export const Footer: React.FC<FooterProps> = ({
             <ul className="space-y-2.5 text-xs text-slate-300">
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
+                  onClick={() => onSelectNav('secteurs')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  BTP
+                  Automobile & Tanger Automotive City
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
+                  onClick={() => onSelectNav('secteurs')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Economie sociale et solidaire
+                  Logistique, Fret & Port Tanger Med
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
+                  onClick={() => onSelectNav('secteurs')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Grande distribution indépendante et retail
+                  Commerce, Franchises & PME
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
+                  onClick={() => onSelectNav('secteurs')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Hospitality et Immobilier
+                  Start-ups, Tech & Digital
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
+                  onClick={() => onSelectNav('secteurs')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Industrie & Logistique
+                  BTP & Promotion Immobilière
                 </button>
               </li>
             </ul>
@@ -91,7 +92,15 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => onSelectNav('offres')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Expertise comptable
+                  Expertise comptable & Bilan DGI
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onSelectNav('enjeux')}
+                  className="hover:text-teal-300 transition-colors text-left"
+                >
+                  Création de société au CRI (48h)
                 </button>
               </li>
               <li>
@@ -99,31 +108,23 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => onSelectNav('offres')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Conseil
+                  Gestion sociale & Paie (DAMANCOM)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
+                  onClick={() => onSelectNav('enjeux')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Gestion sociale et RH
+                  Implantation en Zone Franche (TFZ)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
-                  className="hover:text-teal-300 transition-colors text-left"
+                  onClick={() => onSelectNav('devis')}
+                  className="text-[#2dd4bf] hover:underline font-bold transition-colors text-left"
                 >
-                  DERDAB Académie
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onSelectNav('offres')}
-                  className="hover:text-teal-300 transition-colors text-left"
-                >
-                  Audit & Commissariat
+                  Simulateur de Devis en ligne
                 </button>
               </li>
             </ul>
@@ -137,7 +138,7 @@ export const Footer: React.FC<FooterProps> = ({
             <ul className="space-y-2.5 text-xs text-slate-300">
               <li>
                 <button
-                  onClick={() => onSelectNav('expertises')}
+                  onClick={() => onSelectNav('cabinet')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
                   Qui sommes-nous ?
@@ -145,26 +146,34 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <button
-                  onClick={onOpenBooking}
+                  onClick={() => onSelectNav('cabinet')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Carrières
+                  Maître Mourad Derdab
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
+                  onClick={() => onSelectNav('contact')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Nos bureaux
+                  Nos 4 bureaux (Tanger & Tétouan)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('offres')}
+                  onClick={() => onSelectNav('cabinet')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Nos partenaires
+                  Ordre des Experts-Comptables (OEC)
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onSelectNav('contact')}
+                  className="hover:text-teal-300 transition-colors text-left"
+                >
+                  Prendre contact
                 </button>
               </li>
             </ul>
@@ -181,7 +190,7 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => onSelectNav('evenements-articles')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Publications officielles
+                  Articles & Veille Fiscale
                 </button>
               </li>
               <li>
@@ -189,15 +198,7 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => onSelectNav('evenements-articles')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Actualité institutionnelle
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onSelectNav('evenements-articles')}
-                  className="hover:text-teal-300 transition-colors text-left"
-                >
-                  Espace "Presse"
+                  Loi de Finances & IS/TVA
                 </button>
               </li>
               <li>
@@ -205,14 +206,22 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => onSelectNav('faq')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  FAQ
+                  Foire Aux Questions (FAQ)
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={onOpenClientPortal}
+                  className="text-teal-300 hover:underline font-semibold transition-colors text-left"
+                >
+                  Espace Client Démo Connect
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Column 5: Brand Logo & App Store / Google Play Badges */}
-          <div className="col-span-2 sm:col-span-1 lg:col-span-1 flex flex-col items-start gap-5">
+          {/* Column 5: Brand Logo, Social Media & App Badges */}
+          <div className="col-span-2 sm:col-span-1 lg:col-span-1 flex flex-col items-start gap-4">
             {/* DERDAB COMPTA Logo 100% IDENTIQUE PHOTO */}
             <div className="flex flex-col items-start select-none">
               <div className="rounded-xl overflow-hidden shadow-lg border border-white/20 bg-white p-2 inline-block">
@@ -224,10 +233,18 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
             </div>
 
+            {/* Social Media Icons Styler */}
+            <div className="w-full pt-1">
+              <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">
+                Réseaux sociaux :
+              </div>
+              <SocialLinks variant="footer" />
+            </div>
+
             {/* Google Play Badge */}
             <button
               onClick={onOpenClientPortal}
-              className="inline-flex items-center gap-2.5 bg-black hover:bg-slate-900 border border-slate-700/80 px-3.5 py-1.5 rounded-md text-white transition-all shadow-sm w-44"
+              className="inline-flex items-center gap-2.5 bg-black hover:bg-slate-900 border border-slate-700/80 px-3.5 py-1.5 rounded-md text-white transition-all shadow-sm w-44 mt-1"
               title="Disponible sur Google Play"
             >
               <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -259,7 +276,7 @@ export const Footer: React.FC<FooterProps> = ({
 
             <div className="flex items-center gap-2 pt-1 text-[11px] text-slate-400">
               <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Espace sécurisé & RGPD</span>
+              <span>Espace sécurisé & OEC Maroc</span>
             </div>
           </div>
 

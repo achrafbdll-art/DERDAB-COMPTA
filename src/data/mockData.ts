@@ -16,28 +16,28 @@ export const LOCATIONS: OfficeLocation[] = [
   {
     id: 'tanger-centre',
     city: 'Tanger',
-    name: 'AUDITIA Tanger – City Center',
-    tagline: 'Siège régional Grand Tanger & Pôle Conseil Financier',
+    name: 'DERDAB COMPTA Tanger – City Center',
+    tagline: 'Siège régional Grand Tanger & Pôle Conseil et Expertise',
     address: 'Tanger City Center, Boulevard Mohammed VI, Tour Business, 7ème étage',
     postalCode: '90000 Tanger',
     phone: '+212 (0)5 39 34 50 00',
-    email: 'tanger@auditia.ma',
-    leadExpert: 'Badr Lahlou',
-    leadTitle: 'Fondateur & Managing Partner · Expert-Comptable Diplômé (DPLE) · OEC Maroc',
+    email: 'contact@derdabcompta.ma',
+    leadExpert: 'Maître Mourad Derdab',
+    leadTitle: 'Fondateur & Dirigeant · Expert-Comptable Diplômé · Membre OEC Maroc',
     workingHours: 'Lun - Ven : 08h30 - 18h30 | Samedi sur RDV',
-    specialties: ['Tenue comptable dématérialisée', 'Audit légal & CAC', 'Fiscalité DGI Maroc', 'Restructuration & M&A'],
+    specialties: ['Tenue comptable dématérialisée', 'Audit légal & CAC', 'Fiscalité DGI Maroc', 'Conseil en gestion & stratégie'],
     image: TANGIER_CITY_IMAGE,
     googleMapsUrl: 'https://maps.google.com/?q=Tanger+City+Center'
   },
   {
     id: 'tanger-zone-franche',
     city: 'Grand Tanger',
-    name: 'AUDITIA Tanger Automotive & Free Zone',
+    name: 'DERDAB COMPTA Tanger Automotive & Free Zone',
     tagline: 'Pôle Industrie, Équipementiers & Zones Franches (TFZ / TAC)',
     address: 'Tanger Free Zone (TFZ) & Tanger Automotive City (TAC), Avenue d\'Afrique',
     postalCode: '90013 Grand Tanger',
     phone: '+212 (0)5 39 39 20 10',
-    email: 'zonefranche@auditia.ma',
+    email: 'zonefranche@derdabcompta.ma',
     leadExpert: 'Youssef El Amrani',
     leadTitle: 'Expert-Comptable Associé · Spécialiste Régimes d\'Exonération ZF & TMSA',
     workingHours: 'Lun - Ven : 08h00 - 18h00',
@@ -48,12 +48,12 @@ export const LOCATIONS: OfficeLocation[] = [
   {
     id: 'tetouan-centre',
     city: 'Tétouan',
-    name: 'AUDITIA Tétouan – Wilaya Center',
-    tagline: 'Cabinet de proximité pour les PME & Commerçants de Tétouan',
+    name: 'DERDAB COMPTA Tétouan – Wilaya Center',
+    tagline: 'Cabinet de proximité pour les PME & Dirigeants de Tétouan',
     address: 'Avenue des FAR, Résidence Wilaya Center, Bloc A, 3ème étage',
     postalCode: '93000 Tétouan',
     phone: '+212 (0)5 39 96 15 20',
-    email: 'tetouan@auditia.ma',
+    email: 'tetouan@derdabcompta.ma',
     leadExpert: 'Sofia Berrada Tazi',
     leadTitle: 'Expert-Comptable & Commissaire aux Comptes OEC',
     workingHours: 'Lun - Ven : 08h30 - 18h00',
@@ -64,12 +64,12 @@ export const LOCATIONS: OfficeLocation[] = [
   {
     id: 'tanger-med-hub',
     city: 'Grand Tanger',
-    name: 'AUDITIA Tanger Med Port & Logistics',
+    name: 'DERDAB COMPTA Tanger Med Port & Logistics',
     tagline: 'Accompagnement Douane, Transit & Commerce International',
     address: 'Medhub Logistics Free Zone, Port Tanger Med 1, Bâtiment Tertiaire',
     postalCode: '94000 Ksar El Majaz / Tanger Med',
     phone: '+212 (0)5 39 58 70 80',
-    email: 'tangermed@auditia.ma',
+    email: 'tangermed@derdabcompta.ma',
     leadExpert: 'Mehdi Chraibi',
     leadTitle: 'Consultant Senior en Fiscalité Internationale & Douanes',
     workingHours: 'Lun - Ven : 08h00 - 18h00',
@@ -215,7 +215,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Directeur Général',
     company: 'Atlas Automotive Components',
     location: 'Tanger Automotive City (TAC)',
-    quote: 'AUDITIA Maroc gère notre comptabilité industrielle et notre reporting trimestriel depuis 4 ans. Leur parfaite maîtrise des statuts de la Zone Franche et des télédéclarations DGI nous a évité toute mauvaise surprise fiscale. Une réactivité exemplaire.',
+    quote: 'Le cabinet DERDAB COMPTA gère notre comptabilité industrielle et notre reporting trimestriel depuis 4 ans. Leur parfaite maîtrise des statuts de la Zone Franche et des télédéclarations DGI nous a évité toute mauvaise surprise fiscale. Une réactivité exemplaire.',
     metrics: '+18% d\'économies fiscales légales constatées',
     sector: 'Industrie Automobile'
   },
@@ -225,7 +225,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Cofondatrice & CEO',
     company: 'North Logistics Express',
     location: 'Tanger Med Hub Logistique',
-    quote: 'Pour notre start-up de fret et de logistique connectée, nous avions besoin d\'un cabinet moderne, capable d\'échanger en 100% digital. Avec l\'espace client AUDITIA Connect et leur équipe à Tanger City Center, tout se fait en quelques clics.',
+    quote: 'Pour notre entreprise de fret et logistique, nous avions besoin d\'un cabinet moderne, capable d\'échanger en 100% digital. Avec l\'espace client DERDAB COMPTA Connect et leur équipe à Tanger City Center, tout se fait en quelques clics.',
     metrics: 'Comptabilité 100% sans papier en 48h',
     sector: 'Logistique & Transit'
   },
@@ -235,7 +235,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Gérant Propriétaire',
     company: 'Méditerranée Distribution SARL',
     location: 'Tétouan Centre-Ville',
-    quote: 'Trouver un expert-comptable de haut niveau à Tétouan était notre priorité. Le bureau AUDITIA de l\'Avenue des FAR nous apporte à la fois la proximité humaine d\'un cabinet local et la puissance méthodologique d\'un cabinet de référence.',
+    quote: 'Trouver un expert-comptable de haut niveau à Tétouan était notre priorité. Le bureau DERDAB COMPTA de l\'Avenue des FAR nous apporte à la fois la proximité humaine d\'un cabinet local et la puissance méthodologique d\'un cabinet de référence.',
     metrics: 'Gestion de 45 bulletins de paie sans retard',
     sector: 'Commerce & Distribution'
   }
@@ -266,7 +266,7 @@ export const NEWS_ARTICLES: NewsArticle[] = [
     content: [
       'Grâce à la plateforme digitale du Centre Régional d\'Investissement (CRI) de Tanger-Tétouan-Al Hoceïma, la création d\'une SARL peut aujourd\'hui s\'opérer de façon quasi instantanée.',
       'Les 5 étapes clés comprennent : 1. La délivrance du Certificat Négatif en ligne, 2. La rédaction des statuts sous seing privé, 3. La domiciliation ou le contrat de bail commercial, 4. L\'enregistrement et le dépôt au Greffe, 5. La publication légale au Bulletin Officiel et journal d\'annonces légales.',
-      'Le cabinet AUDITIA prend en charge l\'intégralité du circuit administratif afin de livrer votre dossier prêt à facturer en 48 heures ouvrées.'
+      'Le cabinet DERDAB COMPTA prend en charge l\'intégralité du circuit administratif afin de livrer votre dossier prêt à facturer en 48 heures ouvrées.'
     ],
     keywords: ['Création SARL Tanger', 'CRI Tanger', 'OMPIC Certificat Négatif', 'Cabinet comptable Grand Tanger']
   },
@@ -290,11 +290,11 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     category: 'Tarifs',
     question: 'Quels sont les tarifs d\'un cabinet comptable à Tanger ou à Tétouan ?',
-    answer: 'Les honoraires d\'un expert-comptable au Maroc dépendent de la forme juridique (SARL, SA, personne physique), du volume mensuel de pièces comptables, du nombre de salariés (paies) et de la complexité fiscale. Chez AUDITIA Maroc, nos forfaits débutent à partir de 950 MAD HT/mois pour les TPE naissantes, et sont modulés en toute transparence grâce à notre simulateur en ligne, sans frais cachés.'
+    answer: 'Les honoraires d\'un expert-comptable au Maroc dépendent de la forme juridique (SARL, SA, personne physique), du volume mensuel de pièces comptables, du nombre de salariés (paies) et de la complexité fiscale. Chez DERDAB COMPTA, nos forfaits débutent à partir de 950 MAD HT/mois pour les TPE naissantes, et sont modulés en toute transparence grâce à notre simulateur en ligne, sans frais cachés.'
   },
   {
     category: 'Comptabilité',
-    question: 'Comment transférer la comptabilité de mon entreprise vers le cabinet AUDITIA ?',
+    question: 'Comment transférer la comptabilité de mon entreprise vers le cabinet DERDAB COMPTA ?',
     answer: 'Le changement d\'expert-comptable est une procédure parfaitement encadrée par le Code de Déontologie de l\'Ordre des Experts-Comptables du Maroc. Il vous suffit de nous mandater : nous rédigeons le courrier de confraternité à votre ancien confrère, récupérons l\'historique des balances et grands livres, et prenons le relais immédiatement sans aucune interruption de vos déclarations DGI et CNSS.'
   },
   {
@@ -310,6 +310,6 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     category: 'Fiscalité Tanger',
     question: 'Pourquoi privilégier un cabinet comptable physiquement implanté dans le Grand Tanger et à Tétouan ?',
-    answer: 'La région Tanger-Tétouan-Al Hoceïma possède ses propres spécificités : le dynamisme des zones franches TMSA, les facilités du CRI régional, les services régionaux de la DGI de Tanger et Tétouan, et le Tribunal de Commerce local. Notre implantation directe avec nos bureaux vous garantit des interlocuteurs joignables, sous la supervision de notre Managing Partner Badr Lahlou, capables de se déplacer en 30 minutes dans vos locaux ou de vous recevoir en rendez-vous physique.'
+    answer: 'La région Tanger-Tétouan-Al Hoceïma possède ses propres spécificités : le dynamisme des zones franches TMSA, les facilités du CRI régional, les services régionaux de la DGI de Tanger et Tétouan, et le Tribunal de Commerce local. Notre implantation directe avec nos bureaux vous garantit des interlocuteurs joignables, sous la direction de Maître Mourad Derdab, capables de se déplacer en 30 minutes dans vos locaux ou de vous recevoir en rendez-vous physique.'
   }
 ];

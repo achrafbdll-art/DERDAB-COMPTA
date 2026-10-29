@@ -99,7 +99,7 @@ export const ClientPortalModal: React.FC<ClientPortalModalProps> = ({ isOpen, on
         ...prev,
         {
           sender: 'expert',
-          text: 'Message bien reçu par votre expert-comptable AUDITIA à Tanger. Nous vérifions cela immédiatement avec Badr Lahlou.',
+          text: 'Message bien reçu par votre cabinet DERDAB COMPTA à Tanger. Nous vérifions cela immédiatement avec Maître Mourad Derdab.',
           time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         },
       ]);
@@ -287,7 +287,7 @@ export const ClientPortalModal: React.FC<ClientPortalModalProps> = ({ isOpen, on
 
               <div>
                 <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">
-                  Dernières pièces analysées par l'intelligence AUDITIA :
+                  Dernières pièces analysées par l'intelligence DERDAB COMPTA :
                 </h4>
                 <div className="space-y-2">
                   {uploadedFiles.map((file, idx) => (
