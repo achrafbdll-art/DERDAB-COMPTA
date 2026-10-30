@@ -53,14 +53,15 @@ npm run build
 
 ---
 
-## ✨ Fonctionnalités Incluses
+## ✨ Fonctionnalités Incluses (100% Identique & Fonctionnel)
 
 - **Accueil & Présentation Officielle** : Header vitré avec logo authentique 100% identique, photo officielle de Maître Mourad Derdab à son bureau.
-- **Notre Cabinet** : Présentation complète de Maître Mourad Derdab, valeurs fondatrices, agréments de l'Ordre des Experts-Comptables (OEC) et vision déontologique.
-- **Vos Enjeux** : Fiches pratiques interactives pour la création de société au CRI en 48h, l'implantation en Zone Franche (TFZ / TAC) et le transfert de dossier comptable.
-- **Nos Expertises 360°** : Tenue comptable certifiée, déclarations fiscales DGI (SIMPL-IS, SIMPL-TVA), paie et gestion sociale DAMANCOM CNSS, audit et commissariat aux comptes.
-- **Votre Secteur Régional** : Automobile (TAC), Hub Logistique Tanger Med, Commerce & PME, BTP et Investisseurs étrangers / MRE.
-- **Simulateur de Devis en ligne en Dirhams (MAD)** : Calcul instantané en fonction de la forme juridique, du volume de factures et du nombre de salariés.
-- **Nos 4 Bureaux & Formulaire de Contact** : Coordonnées téléphoniques, adresses, horaires, liens Google Maps et messagerie instantanée.
-- **Réseaux Sociaux Stylés** : Icônes interactives (LinkedIn, WhatsApp, Facebook, Instagram, YouTube) adaptées mobile et desktop.
-- **Espace Client Connect Démo** : Portail collaboratif avec dépôt et reconnaissance de factures par OCR.
+- **Notre Cabinet (`#cabinet`)** : Présentation complète de Maître Mourad Derdab, valeurs fondatrices, agréments de l'Ordre des Experts-Comptables (OEC) et vision déontologique.
+- **Vos Enjeux (`#enjeux`)** : Fiches pratiques interactives pour la création de société au CRI en 48h, l'implantation en Zone Franche (TFZ / TAC) et le transfert de dossier comptable sans rupture.
+- **Facturation Électronique & DGI** : Dispositif de conformité et télétransmission automatique.
+- **Nos Piliers d'Offres (`#offres`)** : Tenue comptable certifiée, déclarations fiscales DGI (SIMPL-IS, SIMPL-TVA), paie et gestion sociale DAMANCOM CNSS, audit et commissariat aux comptes.
+- **Événements & Veille Fiscale (`#evenements-articles`)** : Décryptage de la Loi de Finances marocaine, guides pratiques et actualités juridiques.
+- **Nos 4 Bureaux & Contact Direct (`#contact`)** : Coordonnées complètes, téléphones, liens Google Maps, WhatsApp et formulaire de prise de contact direct pour Tanger City Center, Tanger Free Zone, Tétouan Wilaya Center et Tanger Med.
+- **FAQ Régionale (`#faq`)** : Réponses claires sur les tarifs, obligations fiscales et démarches au Maroc.
+- **Réseaux Sociaux Stylés** : Icônes interactives adaptées (LinkedIn, WhatsApp, Facebook, Instagram, YouTube).
+- **Espace Client Connect Démo** : Portail collaboratif avec reconnaissance OCR de factures.
