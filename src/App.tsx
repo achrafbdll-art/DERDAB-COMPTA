@@ -19,9 +19,7 @@ import { EInvoicingBanner } from './components/EInvoicingBanner.tsx';
 import { InteractiveAccordionSection } from './components/InteractiveAccordionSection.tsx';
 import { CabinetSection } from './components/CabinetSection.tsx';
 import { EnjeuxSection } from './components/EnjeuxSection.tsx';
-import { SectorsSection } from './components/SectorsSection.tsx';
 import { OfficesContactSection } from './components/OfficesContactSection.tsx';
-import { QuoteSimulatorSection } from './components/QuoteSimulatorSection.tsx';
 
 export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -110,17 +108,7 @@ export default function App() {
           }
         />
 
-        {/* 8. Votre Secteur Régional (Auto TAC, Tanger Med, PME, BTP) */}
-        <SectorsSection
-          onOpenBooking={(serviceName) => handleOpenBooking({ service: serviceName || 'Conseil Sectoriel Régional' })}
-        />
-
-        {/* 9. Simulateur de Devis en ligne en Dirhams Marocains (MAD) */}
-        <QuoteSimulatorSection
-          onOpenBooking={(quoteData) => handleOpenBooking(quoteData)}
-        />
-
-        {/* 10. Nos Événements et Articles / Veille fiscale */}
+        {/* 8. Nos Événements et Articles / Veille fiscale */}
         <ArticlesEventsSection
           onOpenBooking={(subject) => handleOpenBooking({ service: subject })}
         />
@@ -177,10 +165,10 @@ export default function App() {
         </a>
 
         <button
-          onClick={() => handleNavigateSection('devis')}
+          onClick={() => handleNavigateSection('contact')}
           className="flex-1 ml-2 py-2 px-2.5 bg-[#c5f2f0] text-slate-950 font-extrabold text-[11px] rounded-lg shadow-xs text-center border border-teal-300 active:scale-95 transition-all"
         >
-          Simuler Devis
+          Nos Bureaux
         </button>
 
         <button

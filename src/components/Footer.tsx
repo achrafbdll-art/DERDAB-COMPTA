@@ -32,50 +32,50 @@ export const Footer: React.FC<FooterProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-12">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10 pb-12 border-b border-slate-800/80">
           
-          {/* Column 1: Votre secteur */}
+          {/* Column 1: Nos implantations */}
           <div>
             <h4 className="text-sm font-bold text-white mb-4 tracking-tight">
-              Votre secteur
+              Nos implantations
             </h4>
             <ul className="space-y-2.5 text-xs text-slate-300">
               <li>
                 <button
-                  onClick={() => onSelectNav('secteurs')}
+                  onClick={() => onSelectNav('contact')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Automobile & Tanger Automotive City
+                  Tanger City Center (Siège)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('secteurs')}
+                  onClick={() => onSelectNav('contact')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Logistique, Fret & Port Tanger Med
+                  Tanger Free Zone & TAC
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('secteurs')}
+                  onClick={() => onSelectNav('contact')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Commerce, Franchises & PME
+                  Tétouan – Wilaya Center
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('secteurs')}
+                  onClick={() => onSelectNav('contact')}
                   className="hover:text-teal-300 transition-colors text-left"
                 >
-                  Start-ups, Tech & Digital
+                  Tanger Med Port & Logistics
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('secteurs')}
-                  className="hover:text-teal-300 transition-colors text-left"
+                  onClick={() => onSelectNav('contact')}
+                  className="text-[#2dd4bf] hover:underline font-bold transition-colors text-left"
                 >
-                  BTP & Promotion Immobilière
+                  Voir nos 4 bureaux ›
                 </button>
               </li>
             </ul>
@@ -121,10 +121,10 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <button
-                  onClick={() => onSelectNav('devis')}
+                  onClick={onOpenBooking}
                   className="text-[#2dd4bf] hover:underline font-bold transition-colors text-left"
                 >
-                  Simulateur de Devis en ligne
+                  Demander un devis gratuit ›
                 </button>
               </li>
             </ul>

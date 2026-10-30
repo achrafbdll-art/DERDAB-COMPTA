@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, Phone, Lock, Calendar, MapPin, ExternalLink, Calculator } from 'lucide-react';
+import { ChevronDown, Menu, X, Phone, Lock, Calendar, MapPin, ExternalLink } from 'lucide-react';
 import { SocialLinks } from './SocialLinks.tsx';
 
 interface HeaderProps {
@@ -218,48 +218,12 @@ export const Header: React.FC<HeaderProps> = ({
               )}
             </div>
 
-            {/* 4. Votre secteur */}
-            <div
-              className="relative"
-              onMouseEnter={() => setActiveDropdown('secteur')}
-              onMouseLeave={() => setActiveDropdown(null)}
-            >
-              <button
-                onClick={() => handleLinkClick('secteurs')}
-                className="flex items-center gap-1 hover:text-white transition-colors py-2 whitespace-nowrap"
-              >
-                <span>Votre secteur</span>
-                <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
-              </button>
-
-              {activeDropdown === 'secteur' && (
-                <div className="absolute top-full -left-12 w-72 bg-[#0a1724]/95 backdrop-blur-md rounded-xl shadow-2xl border border-white/10 p-3 py-2 text-xs z-50">
-                  <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider px-3 py-1">
-                    Écosystèmes industriels & PME
-                  </div>
-                  <a href="#secteurs" onClick={() => handleLinkClick('secteurs')} className="block px-3 py-2 rounded-lg hover:bg-white/10 text-slate-300">
-                    <span className="font-semibold text-white">Automobile & Industrie : </span>
-                    <span className="text-slate-400">Tanger Auto City (TAC)</span>
-                  </a>
-                  <a href="#secteurs" onClick={() => handleLinkClick('secteurs')} className="block px-3 py-2 rounded-lg hover:bg-white/10 text-slate-300">
-                    <span className="font-semibold text-white">Logistique & Transit : </span>
-                    <span className="text-slate-400">Tanger Med Port & Hub</span>
-                  </a>
-                  <a href="#secteurs" onClick={() => handleLinkClick('secteurs')} className="block px-3 py-2 rounded-lg hover:bg-white/10 text-slate-300">
-                    <span className="font-semibold text-white">Commerce & PME : </span>
-                    <span className="text-slate-400">Tanger Centre & Tétouan</span>
-                  </a>
-                </div>
-              )}
-            </div>
-
-            {/* 5. Simulateur de Devis */}
+            {/* 4. Nos Bureaux */}
             <button
-              onClick={() => handleLinkClick('devis')}
-              className="flex items-center gap-1 text-[#2dd4bf] hover:text-white font-semibold transition-colors py-2 whitespace-nowrap"
+              onClick={() => handleLinkClick('contact')}
+              className="flex items-center gap-1 hover:text-white transition-colors py-2 whitespace-nowrap text-slate-200"
             >
-              <Calculator className="w-3.5 h-3.5" />
-              <span>Devis en ligne</span>
+              <span>Nos bureaux</span>
             </button>
 
             {/* 6. Ressources */}
@@ -376,20 +340,6 @@ export const Header: React.FC<HeaderProps> = ({
               <span className="text-xs text-slate-400">›</span>
             </button>
             <button
-              onClick={() => handleLinkClick('secteurs')}
-              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between hover:text-[#2dd4bf] transition-colors"
-            >
-              <span>Votre Secteur (Auto, Fret, PME, BTP)</span>
-              <span className="text-xs text-slate-400">›</span>
-            </button>
-            <button
-              onClick={() => handleLinkClick('devis')}
-              className="text-left py-2.5 border-b border-white/10 flex items-center justify-between text-[#2dd4bf] font-bold"
-            >
-              <span>Simulateur de Devis en ligne</span>
-              <span className="text-xs font-bold">›</span>
-            </button>
-            <button
               onClick={() => handleLinkClick('evenements-articles')}
               className="text-left py-2.5 border-b border-white/10 flex items-center justify-between hover:text-[#2dd4bf] transition-colors"
             >
@@ -426,11 +376,11 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
-                handleLinkClick('devis');
+                onOpenBooking();
               }}
               className="w-full py-3 px-4 bg-[#c5f2f0] text-slate-950 font-black text-sm rounded-xl shadow-md text-center active:scale-95 transition-all"
             >
-              Simuler mon tarif comptable en 1 min
+              Prendre rendez-vous avec le cabinet
             </button>
 
             <div className="flex items-center gap-2 pt-1">
