@@ -5,12 +5,12 @@
 
 import { OfficeLocation, ServiceOffer, Testimonial, NewsArticle, FaqItem } from '../types.ts';
 
-export const HERO_IMAGE = '/src/assets/images/hero_rydge_tangier_office_1793215125952.jpg';
-export const HERO_AERIAL_IMAGE = '/src/assets/images/comptabilite_premium_hero_1793222750124.jpg';
-export const HERO_ACCOUNTING_PREMIUM_IMAGE = '/src/assets/images/comptabilite_premium_hero_1793222750124.jpg';
-export const TANGIER_CITY_IMAGE = '/src/assets/images/tangier_business_district_1793215126124.jpg';
-export const TETOUAN_OFFICE_IMAGE = '/src/assets/images/tetouan_business_office_1793215126979.jpg';
-export const ADVISORY_DISCUSSION_IMAGE = '/src/assets/images/accountant_advisory_discussion_1793215127369.jpg';
+export const HERO_IMAGE = '/assets/images/hero_rydge_tangier_office_1793215125952.jpg';
+export const HERO_AERIAL_IMAGE = '/assets/images/comptabilite_premium_hero_1793222750124.jpg';
+export const HERO_ACCOUNTING_PREMIUM_IMAGE = '/assets/images/comptabilite_premium_hero_1793222750124.jpg';
+export const TANGIER_CITY_IMAGE = '/assets/images/tangier_business_district_1793215126124.jpg';
+export const TETOUAN_OFFICE_IMAGE = '/assets/images/tetouan_business_office_1793215126979.jpg';
+export const ADVISORY_DISCUSSION_IMAGE = '/assets/images/accountant_advisory_discussion_1793215127369.jpg';
 
 export const LOCATIONS: OfficeLocation[] = [
   {

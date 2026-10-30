@@ -33,7 +33,7 @@ export const ArticlesEventsSection: React.FC<ArticlesEventsSectionProps> = ({ on
       type: 'Articles',
       readTime: '6 min',
       date: 'Octobre 2026',
-      image: '/src/assets/images/articles_abstract_blue_waves_1793223724475.jpg',
+      image: '/assets/images/articles_abstract_blue_waves_1793223724475.jpg',
       title: 'Transparence des salaires : 6 réflexes RH à anticiper',
       excerpt:
         "Projet de loi sur la transparence salariale : catégorisation, droit à l'information, index, recrutement... découvrez les 6 réflexes RH à anticiper pour vos équipes.",
@@ -53,7 +53,7 @@ export const ArticlesEventsSection: React.FC<ArticlesEventsSectionProps> = ({ on
       type: 'Articles',
       readTime: '2 min',
       date: 'Octobre 2026',
-      image: '/src/assets/images/articles_business_conversation_1793223725277.jpg',
+      image: '/assets/images/articles_business_conversation_1793223725277.jpg',
       title: 'Abandon de créance : retour à meilleure fortune et imposition',
       excerpt:
         "Le Conseil d'État précise que le retour à meilleure fortune n'est pas imposable si l'abandon de créance initial n'a pas été déduit du résultat fiscal de la société.",
@@ -70,7 +70,7 @@ export const ArticlesEventsSection: React.FC<ArticlesEventsSectionProps> = ({ on
       type: 'Articles',
       readTime: '4 min',
       date: 'Septembre 2026',
-      image: '/src/assets/images/hero_aerial_road_nature_1793216694983.jpg',
+      image: '/assets/images/hero_aerial_road_nature_1793216694983.jpg',
       title: 'Violences urbaines : activité partielle et zéro reste à charge',
       excerpt:
         "Bénéficiez du zéro reste à charge suite aux aléas d'activité : cas d'éligibilité, démarches administratives et mesures de soutien financier d'urgence pour les entreprises.",
@@ -90,7 +90,7 @@ export const ArticlesEventsSection: React.FC<ArticlesEventsSectionProps> = ({ on
       type: 'Événements',
       readTime: 'Webinar 45 min',
       date: '12 Novembre 2026',
-      image: '/src/assets/images/comptabilite_concept_rydge_1793223600063.jpg',
+      image: '/assets/images/comptabilite_concept_rydge_1793223600063.jpg',
       title: 'Webinar Dirigeants : Loi de Finances & Nouveaux seuils fiscaux',
       excerpt:
         "Session interactive en direct animée par nos experts-comptables certifiés OEC. Analyse des mesures d'incitation industrielle et des contrôles DGI.",
@@ -105,7 +105,7 @@ export const ArticlesEventsSection: React.FC<ArticlesEventsSectionProps> = ({ on
       type: 'Événements',
       readTime: 'Atelier Tanger City',
       date: '26 Novembre 2026',
-      image: '/src/assets/images/tangier_business_district_1793215126124.jpg',
+      image: '/assets/images/tangier_business_district_1793215126124.jpg',
       title: 'Atelier Pratique : Passer à la facturation électronique sans stress',
       excerpt:
         "Rencontre en présentiel à nos bureaux de Tanger City Center. Démonstration de l'outil DERDAB COMPTA Connect et validation des formats conformes.",
